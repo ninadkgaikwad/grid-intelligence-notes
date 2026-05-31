@@ -1,0 +1,19 @@
+# Chapter 1 — Performance Foundations
+
+## Motivation
+
+## Runtime, Work, and Span
+
+## Amdahl's Law
+
+## Gustafson's Law
+
+## Brent's Theorem
+
+## Memory Cost and Roofline Intuition
+
+## Benchmarking Methodology
+
+## Exercises
+
+## References

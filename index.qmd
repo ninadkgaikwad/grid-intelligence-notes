@@ -1,0 +1,45 @@
+# Living Technical Notes on Grid Intelligence
+
+These are living graduate-level technical notes on mathematics, control systems, machine learning, power systems, optimization, PyTorch research implementation, and parallel scientific computing.
+
+The notes are developed as part of a long-term study and research program focused on **grid intelligence**, including power-flow modeling, optimal power flow, learning-based control, scientific machine learning, and scalable simulation workflows.
+
+## Scope
+
+The notes are organized into six major parts:
+
+::: {.callout-note}
+## Structure
+
+1. **Mathematical Foundations**  
+   Proofs, analysis, probability, optimization, dynamical systems, and functional tools.
+
+2. **Control Systems**  
+   Linear control, nonlinear control, optimal control, MPC, robustness, and learning-based control.
+
+3. **Machine Learning, Reinforcement Learning, and AI**  
+   ML foundations, probabilistic learning, deep learning, RL, scientific ML, and modern LLM systems.
+
+4. **Power Systems, Power Flow, and OPF**  
+   AC power flow, distribution modeling, OPF, convex relaxations, DERs, batteries, and hosting capacity.
+
+5. **PyTorch for Research Implementation**  
+   Autograd, neural networks, sequence models, transformers, generative models, RL, and scientific ML.
+
+6. **Parallel Computing and Scientific Software Performance**  
+   CPU optimization, multiprocessing, CUDA, benchmarking, and accelerated grid analytics.
+:::
+
+## Status
+
+These notes are not a polished textbook. They are evolving technical notes generated from structured study sessions. Over time, selected sections may be reorganized into polished tutorials, dissertation-support material, internal reports, or book-length manuscripts.
+
+## Intended Use
+
+These notes are meant to support:
+
+- rigorous self-study,
+- PhD research development,
+- iGridSim-related technical work,
+- implementation of ML-assisted OPF and grid analytics,
+- long-term preparation for research in learning, control, optimization, and scientific computing.

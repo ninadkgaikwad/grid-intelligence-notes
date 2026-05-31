@@ -1,0 +1,7 @@
+part,project,chapter,status,study_percent,notes_percent,next_action,last_updated
+Part I,Mathematical Foundations,Proof Writing and Real Analysis,Not started,0,0,Start proof-writing baseline,2026-05-25
+Part II,Control Systems,Control Modeling,Not started,0,0,Define state input output and equilibrium,2026-05-25
+Part III,ML/RL/AI Foundations,ML Foundations,Not started,0,0,Start linear algebra and probability review,2026-05-25
+Part IV,Power Systems and OPF,Phasors Per-Unit and Complex Power,Not started,0,0,Start phasors and sinusoidal steady state,2026-05-25
+Part V,PyTorch,Computational Graphs and Autodiff,Not started,0,0,Start computational graphs,2026-05-25
+Part VI,Parallel Computing,Performance Foundations,Not started,0,0,Start runtime work span and speedup,2026-05-25

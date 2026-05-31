@@ -1,0 +1,727 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Living Technical Notes on Grid Intelligence",
+    "section": "",
+    "text": "1 Living Technical Notes on Grid Intelligence\nThese are living graduate-level technical notes on mathematics, control systems, machine learning, power systems, optimization, PyTorch research implementation, and parallel scientific computing.\nThe notes are developed as part of a long-term study and research program focused on grid intelligence, including power-flow modeling, optimal power flow, learning-based control, scientific machine learning, and scalable simulation workflows.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Living Technical Notes on Grid Intelligence</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#scope",
+    "href": "index.html#scope",
+    "title": "Living Technical Notes on Grid Intelligence",
+    "section": "1.1 Scope",
+    "text": "1.1 Scope\nThe notes are organized into six major parts:\n\n\n\n\n\n\nNoteStructure\n\n\n\n\nMathematical Foundations\nProofs, analysis, probability, optimization, dynamical systems, and functional tools.\nControl Systems\nLinear control, nonlinear control, optimal control, MPC, robustness, and learning-based control.\nMachine Learning, Reinforcement Learning, and AI\nML foundations, probabilistic learning, deep learning, RL, scientific ML, and modern LLM systems.\nPower Systems, Power Flow, and OPF\nAC power flow, distribution modeling, OPF, convex relaxations, DERs, batteries, and hosting capacity.\nPyTorch for Research Implementation\nAutograd, neural networks, sequence models, transformers, generative models, RL, and scientific ML.\nParallel Computing and Scientific Software Performance\nCPU optimization, multiprocessing, CUDA, benchmarking, and accelerated grid analytics.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Living Technical Notes on Grid Intelligence</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#status",
+    "href": "index.html#status",
+    "title": "Living Technical Notes on Grid Intelligence",
+    "section": "1.2 Status",
+    "text": "1.2 Status\nThese notes are not a polished textbook. They are evolving technical notes generated from structured study sessions. Over time, selected sections may be reorganized into polished tutorials, dissertation-support material, internal reports, or book-length manuscripts.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Living Technical Notes on Grid Intelligence</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#intended-use",
+    "href": "index.html#intended-use",
+    "title": "Living Technical Notes on Grid Intelligence",
+    "section": "1.3 Intended Use",
+    "text": "1.3 Intended Use\nThese notes are meant to support:\n\nrigorous self-study,\nPhD research development,\niGridSim-related technical work,\nimplementation of ML-assisted OPF and grid analytics,\nlong-term preparation for research in learning, control, optimization, and scientific computing.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Living Technical Notes on Grid Intelligence</span>"
+    ]
+  },
+  {
+    "objectID": "preface.html",
+    "href": "preface.html",
+    "title": "2  Preface",
+    "section": "",
+    "text": "These notes are meant to support long-term graduate-level study and research development in grid intelligence, optimization, machine learning, control, and scientific computing.\nThe current version should be viewed as a living technical notebook rather than a finished book. Over time, selected material may be reorganized into polished tutorials, dissertation-support material, internal technical reports, or book-length manuscripts.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preface</span>"
+    ]
+  },
+  {
+    "objectID": "how-to-read.html",
+    "href": "how-to-read.html",
+    "title": "3  How to Read These Notes",
+    "section": "",
+    "text": "The notes are organized by major study tracks rather than by final textbook structure.\nEach chapter may include:\n\nmotivation\ndefinitions\nmathematical derivations\nalgorithms\nworked examples\nimplementation notes\nexercises\nreferences\n\nThe progress dashboard is included for tracking study and notes-writing progress. Technical chapters should be read as evolving notes.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>How to Read These Notes</span>"
+    ]
+  },
+  {
+    "objectID": "progress.html",
+    "href": "progress.html",
+    "title": "4  Progress Dashboard",
+    "section": "",
+    "text": "This page tracks study progress and notes-writing progress across the main study tracks.\n\n\n\n\n\n\nTipHow to interpret this table\n\n\n\n\nStudy percent tracks conceptual/course progress.\nNotes percent tracks how much has been written into these technical notes.\nThe dashboard is mainly for internal tracking.\n\n\n\n\n\n\n\n\n\n\n \npart\nproject\nchapter\nstatus\nstudy_percent\nnotes_percent\nnext_action\nlast_updated\n\n\n\n\n0\nPart I\nMathematical Foundations\nProof Writing and Real Analysis\nNot started\n0%\n0%\nStart proof-writing baseline\n2026-05-25\n\n\n1\nPart II\nControl Systems\nControl Modeling\nNot started\n0%\n0%\nDefine state input output and equilibrium\n2026-05-25\n\n\n2\nPart III\nML/RL/AI Foundations\nML Foundations\nNot started\n0%\n0%\nStart linear algebra and probability review\n2026-05-25\n\n\n3\nPart IV\nPower Systems and OPF\nPhasors Per-Unit and Complex Power\nNot started\n0%\n0%\nStart phasors and sinusoidal steady state\n2026-05-25\n\n\n4\nPart V\nPyTorch\nComputational Graphs and Autodiff\nNot started\n0%\n0%\nStart computational graphs\n2026-05-25\n\n\n5\nPart VI\nParallel Computing\nPerformance Foundations\nNot started\n0%\n0%\nStart runtime work span and speedup\n2026-05-25",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Progress Dashboard</span>"
+    ]
+  },
+  {
+    "objectID": "notation.html",
+    "href": "notation.html",
+    "title": "5  Notation",
+    "section": "",
+    "text": "This page collects common notation used throughout the notes.\n\n\n\nSymbol\nMeaning\n\n\n\n\n\\(x\\)\nState vector\n\n\n\\(u\\)\nControl input\n\n\n\\(y\\)\nOutput vector\n\n\n\\(A, B, C, D\\)\nState-space matrices\n\n\n\\(P\\)\nReal power\n\n\n\\(Q\\)\nReactive power\n\n\n\\(S\\)\nComplex power\n\n\n\\(V\\)\nVoltage phasor\n\n\n\\(I\\)\nCurrent phasor",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Notation</span>"
+    ]
+  },
+  {
+    "objectID": "part-i-math/01-proof-writing-real-analysis.html",
+    "href": "part-i-math/01-proof-writing-real-analysis.html",
+    "title": "6  Chapter 1 — Proof Writing and Real Analysis",
+    "section": "",
+    "text": "6.1 Motivation",
+    "crumbs": [
+      "Part I — Mathematical Foundations",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Chapter 1 — Proof Writing and Real Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "part-i-math/01-proof-writing-real-analysis.html#logic-statements-and-quantifiers",
+    "href": "part-i-math/01-proof-writing-real-analysis.html#logic-statements-and-quantifiers",
+    "title": "6  Chapter 1 — Proof Writing and Real Analysis",
+    "section": "6.2 Logic, Statements, and Quantifiers",
+    "text": "6.2 Logic, Statements, and Quantifiers",
+    "crumbs": [
+      "Part I — Mathematical Foundations",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Chapter 1 — Proof Writing and Real Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "part-i-math/01-proof-writing-real-analysis.html#direct-proofs",
+    "href": "part-i-math/01-proof-writing-real-analysis.html#direct-proofs",
+    "title": "6  Chapter 1 — Proof Writing and Real Analysis",
+    "section": "6.3 Direct Proofs",
+    "text": "6.3 Direct Proofs",
+    "crumbs": [
+      "Part I — Mathematical Foundations",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Chapter 1 — Proof Writing and Real Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "part-i-math/01-proof-writing-real-analysis.html#proof-by-contradiction-and-contrapositive",
+    "href": "part-i-math/01-proof-writing-real-analysis.html#proof-by-contradiction-and-contrapositive",
+    "title": "6  Chapter 1 — Proof Writing and Real Analysis",
+    "section": "6.4 Proof by Contradiction and Contrapositive",
+    "text": "6.4 Proof by Contradiction and Contrapositive",
+    "crumbs": [
+      "Part I — Mathematical Foundations",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Chapter 1 — Proof Writing and Real Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "part-i-math/01-proof-writing-real-analysis.html#sequences-and-limits",
+    "href": "part-i-math/01-proof-writing-real-analysis.html#sequences-and-limits",
+    "title": "6  Chapter 1 — Proof Writing and Real Analysis",
+    "section": "6.5 Sequences and Limits",
+    "text": "6.5 Sequences and Limits",
+    "crumbs": [
+      "Part I — Mathematical Foundations",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Chapter 1 — Proof Writing and Real Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "part-i-math/01-proof-writing-real-analysis.html#continuity-and-compactness",
+    "href": "part-i-math/01-proof-writing-real-analysis.html#continuity-and-compactness",
+    "title": "6  Chapter 1 — Proof Writing and Real Analysis",
+    "section": "6.6 Continuity and Compactness",
+    "text": "6.6 Continuity and Compactness",
+    "crumbs": [
+      "Part I — Mathematical Foundations",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Chapter 1 — Proof Writing and Real Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "part-i-math/01-proof-writing-real-analysis.html#worked-examples",
+    "href": "part-i-math/01-proof-writing-real-analysis.html#worked-examples",
+    "title": "6  Chapter 1 — Proof Writing and Real Analysis",
+    "section": "6.7 Worked Examples",
+    "text": "6.7 Worked Examples",
+    "crumbs": [
+      "Part I — Mathematical Foundations",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Chapter 1 — Proof Writing and Real Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "part-i-math/01-proof-writing-real-analysis.html#exercises",
+    "href": "part-i-math/01-proof-writing-real-analysis.html#exercises",
+    "title": "6  Chapter 1 — Proof Writing and Real Analysis",
+    "section": "6.8 Exercises",
+    "text": "6.8 Exercises",
+    "crumbs": [
+      "Part I — Mathematical Foundations",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Chapter 1 — Proof Writing and Real Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "part-i-math/01-proof-writing-real-analysis.html#references",
+    "href": "part-i-math/01-proof-writing-real-analysis.html#references",
+    "title": "6  Chapter 1 — Proof Writing and Real Analysis",
+    "section": "6.9 References",
+    "text": "6.9 References",
+    "crumbs": [
+      "Part I — Mathematical Foundations",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Chapter 1 — Proof Writing and Real Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "part-ii-control/01-control-modeling.html",
+    "href": "part-ii-control/01-control-modeling.html",
+    "title": "7  Chapter 1 — Dynamical Systems and Control Modeling",
+    "section": "",
+    "text": "7.1 Motivation",
+    "crumbs": [
+      "Part II — Control Systems",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Chapter 1 — Dynamical Systems and Control Modeling</span>"
+    ]
+  },
+  {
+    "objectID": "part-ii-control/01-control-modeling.html#continuous-time-and-discrete-time-dynamics",
+    "href": "part-ii-control/01-control-modeling.html#continuous-time-and-discrete-time-dynamics",
+    "title": "7  Chapter 1 — Dynamical Systems and Control Modeling",
+    "section": "7.2 Continuous-Time and Discrete-Time Dynamics",
+    "text": "7.2 Continuous-Time and Discrete-Time Dynamics",
+    "crumbs": [
+      "Part II — Control Systems",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Chapter 1 — Dynamical Systems and Control Modeling</span>"
+    ]
+  },
+  {
+    "objectID": "part-ii-control/01-control-modeling.html#states-inputs-outputs-and-disturbances",
+    "href": "part-ii-control/01-control-modeling.html#states-inputs-outputs-and-disturbances",
+    "title": "7  Chapter 1 — Dynamical Systems and Control Modeling",
+    "section": "7.3 States, Inputs, Outputs, and Disturbances",
+    "text": "7.3 States, Inputs, Outputs, and Disturbances",
+    "crumbs": [
+      "Part II — Control Systems",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Chapter 1 — Dynamical Systems and Control Modeling</span>"
+    ]
+  },
+  {
+    "objectID": "part-ii-control/01-control-modeling.html#equilibrium-points",
+    "href": "part-ii-control/01-control-modeling.html#equilibrium-points",
+    "title": "7  Chapter 1 — Dynamical Systems and Control Modeling",
+    "section": "7.4 Equilibrium Points",
+    "text": "7.4 Equilibrium Points",
+    "crumbs": [
+      "Part II — Control Systems",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Chapter 1 — Dynamical Systems and Control Modeling</span>"
+    ]
+  },
+  {
+    "objectID": "part-ii-control/01-control-modeling.html#linearization-around-equilibria",
+    "href": "part-ii-control/01-control-modeling.html#linearization-around-equilibria",
+    "title": "7  Chapter 1 — Dynamical Systems and Control Modeling",
+    "section": "7.5 Linearization Around Equilibria",
+    "text": "7.5 Linearization Around Equilibria",
+    "crumbs": [
+      "Part II — Control Systems",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Chapter 1 — Dynamical Systems and Control Modeling</span>"
+    ]
+  },
+  {
+    "objectID": "part-ii-control/01-control-modeling.html#control-objectives",
+    "href": "part-ii-control/01-control-modeling.html#control-objectives",
+    "title": "7  Chapter 1 — Dynamical Systems and Control Modeling",
+    "section": "7.6 Control Objectives",
+    "text": "7.6 Control Objectives",
+    "crumbs": [
+      "Part II — Control Systems",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Chapter 1 — Dynamical Systems and Control Modeling</span>"
+    ]
+  },
+  {
+    "objectID": "part-ii-control/01-control-modeling.html#worked-examples",
+    "href": "part-ii-control/01-control-modeling.html#worked-examples",
+    "title": "7  Chapter 1 — Dynamical Systems and Control Modeling",
+    "section": "7.7 Worked Examples",
+    "text": "7.7 Worked Examples",
+    "crumbs": [
+      "Part II — Control Systems",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Chapter 1 — Dynamical Systems and Control Modeling</span>"
+    ]
+  },
+  {
+    "objectID": "part-ii-control/01-control-modeling.html#exercises",
+    "href": "part-ii-control/01-control-modeling.html#exercises",
+    "title": "7  Chapter 1 — Dynamical Systems and Control Modeling",
+    "section": "7.8 Exercises",
+    "text": "7.8 Exercises",
+    "crumbs": [
+      "Part II — Control Systems",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Chapter 1 — Dynamical Systems and Control Modeling</span>"
+    ]
+  },
+  {
+    "objectID": "part-ii-control/01-control-modeling.html#references",
+    "href": "part-ii-control/01-control-modeling.html#references",
+    "title": "7  Chapter 1 — Dynamical Systems and Control Modeling",
+    "section": "7.9 References",
+    "text": "7.9 References",
+    "crumbs": [
+      "Part II — Control Systems",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Chapter 1 — Dynamical Systems and Control Modeling</span>"
+    ]
+  },
+  {
+    "objectID": "part-iii-ml-ai/01-ml-foundations.html",
+    "href": "part-iii-ml-ai/01-ml-foundations.html",
+    "title": "8  Chapter 1 — Mathematical Foundations for ML/RL/AI",
+    "section": "",
+    "text": "8.1 Motivation",
+    "crumbs": [
+      "Part III — Machine Learning, Reinforcement Learning, and AI",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chapter 1 — Mathematical Foundations for ML/RL/AI</span>"
+    ]
+  },
+  {
+    "objectID": "part-iii-ml-ai/01-ml-foundations.html#linear-algebra-for-learning",
+    "href": "part-iii-ml-ai/01-ml-foundations.html#linear-algebra-for-learning",
+    "title": "8  Chapter 1 — Mathematical Foundations for ML/RL/AI",
+    "section": "8.2 Linear Algebra for Learning",
+    "text": "8.2 Linear Algebra for Learning",
+    "crumbs": [
+      "Part III — Machine Learning, Reinforcement Learning, and AI",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chapter 1 — Mathematical Foundations for ML/RL/AI</span>"
+    ]
+  },
+  {
+    "objectID": "part-iii-ml-ai/01-ml-foundations.html#matrix-calculus",
+    "href": "part-iii-ml-ai/01-ml-foundations.html#matrix-calculus",
+    "title": "8  Chapter 1 — Mathematical Foundations for ML/RL/AI",
+    "section": "8.3 Matrix Calculus",
+    "text": "8.3 Matrix Calculus",
+    "crumbs": [
+      "Part III — Machine Learning, Reinforcement Learning, and AI",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chapter 1 — Mathematical Foundations for ML/RL/AI</span>"
+    ]
+  },
+  {
+    "objectID": "part-iii-ml-ai/01-ml-foundations.html#probability-and-statistics",
+    "href": "part-iii-ml-ai/01-ml-foundations.html#probability-and-statistics",
+    "title": "8  Chapter 1 — Mathematical Foundations for ML/RL/AI",
+    "section": "8.4 Probability and Statistics",
+    "text": "8.4 Probability and Statistics",
+    "crumbs": [
+      "Part III — Machine Learning, Reinforcement Learning, and AI",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chapter 1 — Mathematical Foundations for ML/RL/AI</span>"
+    ]
+  },
+  {
+    "objectID": "part-iii-ml-ai/01-ml-foundations.html#optimization-foundations",
+    "href": "part-iii-ml-ai/01-ml-foundations.html#optimization-foundations",
+    "title": "8  Chapter 1 — Mathematical Foundations for ML/RL/AI",
+    "section": "8.5 Optimization Foundations",
+    "text": "8.5 Optimization Foundations",
+    "crumbs": [
+      "Part III — Machine Learning, Reinforcement Learning, and AI",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chapter 1 — Mathematical Foundations for ML/RL/AI</span>"
+    ]
+  },
+  {
+    "objectID": "part-iii-ml-ai/01-ml-foundations.html#information-theoretic-quantities",
+    "href": "part-iii-ml-ai/01-ml-foundations.html#information-theoretic-quantities",
+    "title": "8  Chapter 1 — Mathematical Foundations for ML/RL/AI",
+    "section": "8.6 Information-Theoretic Quantities",
+    "text": "8.6 Information-Theoretic Quantities",
+    "crumbs": [
+      "Part III — Machine Learning, Reinforcement Learning, and AI",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chapter 1 — Mathematical Foundations for ML/RL/AI</span>"
+    ]
+  },
+  {
+    "objectID": "part-iii-ml-ai/01-ml-foundations.html#worked-examples",
+    "href": "part-iii-ml-ai/01-ml-foundations.html#worked-examples",
+    "title": "8  Chapter 1 — Mathematical Foundations for ML/RL/AI",
+    "section": "8.7 Worked Examples",
+    "text": "8.7 Worked Examples",
+    "crumbs": [
+      "Part III — Machine Learning, Reinforcement Learning, and AI",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chapter 1 — Mathematical Foundations for ML/RL/AI</span>"
+    ]
+  },
+  {
+    "objectID": "part-iii-ml-ai/01-ml-foundations.html#exercises",
+    "href": "part-iii-ml-ai/01-ml-foundations.html#exercises",
+    "title": "8  Chapter 1 — Mathematical Foundations for ML/RL/AI",
+    "section": "8.8 Exercises",
+    "text": "8.8 Exercises",
+    "crumbs": [
+      "Part III — Machine Learning, Reinforcement Learning, and AI",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chapter 1 — Mathematical Foundations for ML/RL/AI</span>"
+    ]
+  },
+  {
+    "objectID": "part-iii-ml-ai/01-ml-foundations.html#references",
+    "href": "part-iii-ml-ai/01-ml-foundations.html#references",
+    "title": "8  Chapter 1 — Mathematical Foundations for ML/RL/AI",
+    "section": "8.9 References",
+    "text": "8.9 References",
+    "crumbs": [
+      "Part III — Machine Learning, Reinforcement Learning, and AI",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chapter 1 — Mathematical Foundations for ML/RL/AI</span>"
+    ]
+  },
+  {
+    "objectID": "part-iv-power-opf/01-phasors-per-unit-complex-power.html",
+    "href": "part-iv-power-opf/01-phasors-per-unit-complex-power.html",
+    "title": "9  Chapter 1 — Phasors, Per-Unit Systems, and Complex Power",
+    "section": "",
+    "text": "9.1 Motivation",
+    "crumbs": [
+      "Part IV — Power Systems, Power Flow, and OPF",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Chapter 1 — Phasors, Per-Unit Systems, and Complex Power</span>"
+    ]
+  },
+  {
+    "objectID": "part-iv-power-opf/01-phasors-per-unit-complex-power.html#sinusoidal-steady-state",
+    "href": "part-iv-power-opf/01-phasors-per-unit-complex-power.html#sinusoidal-steady-state",
+    "title": "9  Chapter 1 — Phasors, Per-Unit Systems, and Complex Power",
+    "section": "9.2 Sinusoidal Steady State",
+    "text": "9.2 Sinusoidal Steady State",
+    "crumbs": [
+      "Part IV — Power Systems, Power Flow, and OPF",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Chapter 1 — Phasors, Per-Unit Systems, and Complex Power</span>"
+    ]
+  },
+  {
+    "objectID": "part-iv-power-opf/01-phasors-per-unit-complex-power.html#rms-phasors",
+    "href": "part-iv-power-opf/01-phasors-per-unit-complex-power.html#rms-phasors",
+    "title": "9  Chapter 1 — Phasors, Per-Unit Systems, and Complex Power",
+    "section": "9.3 RMS Phasors",
+    "text": "9.3 RMS Phasors",
+    "crumbs": [
+      "Part IV — Power Systems, Power Flow, and OPF",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Chapter 1 — Phasors, Per-Unit Systems, and Complex Power</span>"
+    ]
+  },
+  {
+    "objectID": "part-iv-power-opf/01-phasors-per-unit-complex-power.html#complex-power",
+    "href": "part-iv-power-opf/01-phasors-per-unit-complex-power.html#complex-power",
+    "title": "9  Chapter 1 — Phasors, Per-Unit Systems, and Complex Power",
+    "section": "9.4 Complex Power",
+    "text": "9.4 Complex Power",
+    "crumbs": [
+      "Part IV — Power Systems, Power Flow, and OPF",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Chapter 1 — Phasors, Per-Unit Systems, and Complex Power</span>"
+    ]
+  },
+  {
+    "objectID": "part-iv-power-opf/01-phasors-per-unit-complex-power.html#per-unit-normalization",
+    "href": "part-iv-power-opf/01-phasors-per-unit-complex-power.html#per-unit-normalization",
+    "title": "9  Chapter 1 — Phasors, Per-Unit Systems, and Complex Power",
+    "section": "9.5 Per-Unit Normalization",
+    "text": "9.5 Per-Unit Normalization",
+    "crumbs": [
+      "Part IV — Power Systems, Power Flow, and OPF",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Chapter 1 — Phasors, Per-Unit Systems, and Complex Power</span>"
+    ]
+  },
+  {
+    "objectID": "part-iv-power-opf/01-phasors-per-unit-complex-power.html#three-phase-power",
+    "href": "part-iv-power-opf/01-phasors-per-unit-complex-power.html#three-phase-power",
+    "title": "9  Chapter 1 — Phasors, Per-Unit Systems, and Complex Power",
+    "section": "9.6 Three-Phase Power",
+    "text": "9.6 Three-Phase Power",
+    "crumbs": [
+      "Part IV — Power Systems, Power Flow, and OPF",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Chapter 1 — Phasors, Per-Unit Systems, and Complex Power</span>"
+    ]
+  },
+  {
+    "objectID": "part-iv-power-opf/01-phasors-per-unit-complex-power.html#opendss-and-opf-connections",
+    "href": "part-iv-power-opf/01-phasors-per-unit-complex-power.html#opendss-and-opf-connections",
+    "title": "9  Chapter 1 — Phasors, Per-Unit Systems, and Complex Power",
+    "section": "9.7 OpenDSS and OPF Connections",
+    "text": "9.7 OpenDSS and OPF Connections",
+    "crumbs": [
+      "Part IV — Power Systems, Power Flow, and OPF",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Chapter 1 — Phasors, Per-Unit Systems, and Complex Power</span>"
+    ]
+  },
+  {
+    "objectID": "part-iv-power-opf/01-phasors-per-unit-complex-power.html#worked-examples",
+    "href": "part-iv-power-opf/01-phasors-per-unit-complex-power.html#worked-examples",
+    "title": "9  Chapter 1 — Phasors, Per-Unit Systems, and Complex Power",
+    "section": "9.8 Worked Examples",
+    "text": "9.8 Worked Examples",
+    "crumbs": [
+      "Part IV — Power Systems, Power Flow, and OPF",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Chapter 1 — Phasors, Per-Unit Systems, and Complex Power</span>"
+    ]
+  },
+  {
+    "objectID": "part-iv-power-opf/01-phasors-per-unit-complex-power.html#exercises",
+    "href": "part-iv-power-opf/01-phasors-per-unit-complex-power.html#exercises",
+    "title": "9  Chapter 1 — Phasors, Per-Unit Systems, and Complex Power",
+    "section": "9.9 Exercises",
+    "text": "9.9 Exercises",
+    "crumbs": [
+      "Part IV — Power Systems, Power Flow, and OPF",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Chapter 1 — Phasors, Per-Unit Systems, and Complex Power</span>"
+    ]
+  },
+  {
+    "objectID": "part-iv-power-opf/01-phasors-per-unit-complex-power.html#references",
+    "href": "part-iv-power-opf/01-phasors-per-unit-complex-power.html#references",
+    "title": "9  Chapter 1 — Phasors, Per-Unit Systems, and Complex Power",
+    "section": "9.10 References",
+    "text": "9.10 References",
+    "crumbs": [
+      "Part IV — Power Systems, Power Flow, and OPF",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Chapter 1 — Phasors, Per-Unit Systems, and Complex Power</span>"
+    ]
+  },
+  {
+    "objectID": "part-v-pytorch/01-computational-graphs-autodiff.html",
+    "href": "part-v-pytorch/01-computational-graphs-autodiff.html",
+    "title": "10  Chapter 1 — Computational Graphs and Automatic Differentiation",
+    "section": "",
+    "text": "10.1 Motivation",
+    "crumbs": [
+      "Part V — PyTorch for Research Implementation",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Chapter 1 — Computational Graphs and Automatic Differentiation</span>"
+    ]
+  },
+  {
+    "objectID": "part-v-pytorch/01-computational-graphs-autodiff.html#scalar-and-vector-functions",
+    "href": "part-v-pytorch/01-computational-graphs-autodiff.html#scalar-and-vector-functions",
+    "title": "10  Chapter 1 — Computational Graphs and Automatic Differentiation",
+    "section": "10.2 Scalar and Vector Functions",
+    "text": "10.2 Scalar and Vector Functions",
+    "crumbs": [
+      "Part V — PyTorch for Research Implementation",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Chapter 1 — Computational Graphs and Automatic Differentiation</span>"
+    ]
+  },
+  {
+    "objectID": "part-v-pytorch/01-computational-graphs-autodiff.html#computational-graphs",
+    "href": "part-v-pytorch/01-computational-graphs-autodiff.html#computational-graphs",
+    "title": "10  Chapter 1 — Computational Graphs and Automatic Differentiation",
+    "section": "10.3 Computational Graphs",
+    "text": "10.3 Computational Graphs",
+    "crumbs": [
+      "Part V — PyTorch for Research Implementation",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Chapter 1 — Computational Graphs and Automatic Differentiation</span>"
+    ]
+  },
+  {
+    "objectID": "part-v-pytorch/01-computational-graphs-autodiff.html#multivariable-chain-rule",
+    "href": "part-v-pytorch/01-computational-graphs-autodiff.html#multivariable-chain-rule",
+    "title": "10  Chapter 1 — Computational Graphs and Automatic Differentiation",
+    "section": "10.4 Multivariable Chain Rule",
+    "text": "10.4 Multivariable Chain Rule",
+    "crumbs": [
+      "Part V — PyTorch for Research Implementation",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Chapter 1 — Computational Graphs and Automatic Differentiation</span>"
+    ]
+  },
+  {
+    "objectID": "part-v-pytorch/01-computational-graphs-autodiff.html#reverse-mode-automatic-differentiation",
+    "href": "part-v-pytorch/01-computational-graphs-autodiff.html#reverse-mode-automatic-differentiation",
+    "title": "10  Chapter 1 — Computational Graphs and Automatic Differentiation",
+    "section": "10.5 Reverse-Mode Automatic Differentiation",
+    "text": "10.5 Reverse-Mode Automatic Differentiation",
+    "crumbs": [
+      "Part V — PyTorch for Research Implementation",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Chapter 1 — Computational Graphs and Automatic Differentiation</span>"
+    ]
+  },
+  {
+    "objectID": "part-v-pytorch/01-computational-graphs-autodiff.html#manual-gradient-descent",
+    "href": "part-v-pytorch/01-computational-graphs-autodiff.html#manual-gradient-descent",
+    "title": "10  Chapter 1 — Computational Graphs and Automatic Differentiation",
+    "section": "10.6 Manual Gradient Descent",
+    "text": "10.6 Manual Gradient Descent",
+    "crumbs": [
+      "Part V — PyTorch for Research Implementation",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Chapter 1 — Computational Graphs and Automatic Differentiation</span>"
+    ]
+  },
+  {
+    "objectID": "part-v-pytorch/01-computational-graphs-autodiff.html#mapping-to-pytorch-autograd",
+    "href": "part-v-pytorch/01-computational-graphs-autodiff.html#mapping-to-pytorch-autograd",
+    "title": "10  Chapter 1 — Computational Graphs and Automatic Differentiation",
+    "section": "10.7 Mapping to PyTorch Autograd",
+    "text": "10.7 Mapping to PyTorch Autograd",
+    "crumbs": [
+      "Part V — PyTorch for Research Implementation",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Chapter 1 — Computational Graphs and Automatic Differentiation</span>"
+    ]
+  },
+  {
+    "objectID": "part-v-pytorch/01-computational-graphs-autodiff.html#exercises",
+    "href": "part-v-pytorch/01-computational-graphs-autodiff.html#exercises",
+    "title": "10  Chapter 1 — Computational Graphs and Automatic Differentiation",
+    "section": "10.8 Exercises",
+    "text": "10.8 Exercises",
+    "crumbs": [
+      "Part V — PyTorch for Research Implementation",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Chapter 1 — Computational Graphs and Automatic Differentiation</span>"
+    ]
+  },
+  {
+    "objectID": "part-v-pytorch/01-computational-graphs-autodiff.html#references",
+    "href": "part-v-pytorch/01-computational-graphs-autodiff.html#references",
+    "title": "10  Chapter 1 — Computational Graphs and Automatic Differentiation",
+    "section": "10.9 References",
+    "text": "10.9 References",
+    "crumbs": [
+      "Part V — PyTorch for Research Implementation",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Chapter 1 — Computational Graphs and Automatic Differentiation</span>"
+    ]
+  },
+  {
+    "objectID": "part-vi-parallel/01-performance-foundations.html",
+    "href": "part-vi-parallel/01-performance-foundations.html",
+    "title": "11  Chapter 1 — Performance Foundations",
+    "section": "",
+    "text": "11.1 Motivation",
+    "crumbs": [
+      "Part VI — Parallel Computing and Scientific Software Performance",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Chapter 1 — Performance Foundations</span>"
+    ]
+  },
+  {
+    "objectID": "part-vi-parallel/01-performance-foundations.html#runtime-work-and-span",
+    "href": "part-vi-parallel/01-performance-foundations.html#runtime-work-and-span",
+    "title": "11  Chapter 1 — Performance Foundations",
+    "section": "11.2 Runtime, Work, and Span",
+    "text": "11.2 Runtime, Work, and Span",
+    "crumbs": [
+      "Part VI — Parallel Computing and Scientific Software Performance",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Chapter 1 — Performance Foundations</span>"
+    ]
+  },
+  {
+    "objectID": "part-vi-parallel/01-performance-foundations.html#amdahls-law",
+    "href": "part-vi-parallel/01-performance-foundations.html#amdahls-law",
+    "title": "11  Chapter 1 — Performance Foundations",
+    "section": "11.3 Amdahl’s Law",
+    "text": "11.3 Amdahl’s Law",
+    "crumbs": [
+      "Part VI — Parallel Computing and Scientific Software Performance",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Chapter 1 — Performance Foundations</span>"
+    ]
+  },
+  {
+    "objectID": "part-vi-parallel/01-performance-foundations.html#gustafsons-law",
+    "href": "part-vi-parallel/01-performance-foundations.html#gustafsons-law",
+    "title": "11  Chapter 1 — Performance Foundations",
+    "section": "11.4 Gustafson’s Law",
+    "text": "11.4 Gustafson’s Law",
+    "crumbs": [
+      "Part VI — Parallel Computing and Scientific Software Performance",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Chapter 1 — Performance Foundations</span>"
+    ]
+  },
+  {
+    "objectID": "part-vi-parallel/01-performance-foundations.html#brents-theorem",
+    "href": "part-vi-parallel/01-performance-foundations.html#brents-theorem",
+    "title": "11  Chapter 1 — Performance Foundations",
+    "section": "11.5 Brent’s Theorem",
+    "text": "11.5 Brent’s Theorem",
+    "crumbs": [
+      "Part VI — Parallel Computing and Scientific Software Performance",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Chapter 1 — Performance Foundations</span>"
+    ]
+  },
+  {
+    "objectID": "part-vi-parallel/01-performance-foundations.html#memory-cost-and-roofline-intuition",
+    "href": "part-vi-parallel/01-performance-foundations.html#memory-cost-and-roofline-intuition",
+    "title": "11  Chapter 1 — Performance Foundations",
+    "section": "11.6 Memory Cost and Roofline Intuition",
+    "text": "11.6 Memory Cost and Roofline Intuition",
+    "crumbs": [
+      "Part VI — Parallel Computing and Scientific Software Performance",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Chapter 1 — Performance Foundations</span>"
+    ]
+  },
+  {
+    "objectID": "part-vi-parallel/01-performance-foundations.html#benchmarking-methodology",
+    "href": "part-vi-parallel/01-performance-foundations.html#benchmarking-methodology",
+    "title": "11  Chapter 1 — Performance Foundations",
+    "section": "11.7 Benchmarking Methodology",
+    "text": "11.7 Benchmarking Methodology",
+    "crumbs": [
+      "Part VI — Parallel Computing and Scientific Software Performance",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Chapter 1 — Performance Foundations</span>"
+    ]
+  },
+  {
+    "objectID": "part-vi-parallel/01-performance-foundations.html#exercises",
+    "href": "part-vi-parallel/01-performance-foundations.html#exercises",
+    "title": "11  Chapter 1 — Performance Foundations",
+    "section": "11.8 Exercises",
+    "text": "11.8 Exercises",
+    "crumbs": [
+      "Part VI — Parallel Computing and Scientific Software Performance",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Chapter 1 — Performance Foundations</span>"
+    ]
+  },
+  {
+    "objectID": "part-vi-parallel/01-performance-foundations.html#references",
+    "href": "part-vi-parallel/01-performance-foundations.html#references",
+    "title": "11  Chapter 1 — Performance Foundations",
+    "section": "11.9 References",
+    "text": "11.9 References",
+    "crumbs": [
+      "Part VI — Parallel Computing and Scientific Software Performance",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Chapter 1 — Performance Foundations</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/software-setup.html",
+    "href": "appendices/software-setup.html",
+    "title": "12  Software Setup",
+    "section": "",
+    "text": "12.1 Quarto\nThis appendix records the software setup used for building and maintaining these notes.",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Software Setup</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/software-setup.html#python",
+    "href": "appendices/software-setup.html#python",
+    "title": "12  Software Setup",
+    "section": "12.2 Python",
+    "text": "12.2 Python",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Software Setup</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/software-setup.html#git-and-github",
+    "href": "appendices/software-setup.html#git-and-github",
+    "title": "12  Software Setup",
+    "section": "12.3 Git and GitHub",
+    "text": "12.3 Git and GitHub",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Software Setup</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/software-setup.html#optional-latex-pdf-toolchain",
+    "href": "appendices/software-setup.html#optional-latex-pdf-toolchain",
+    "title": "12  Software Setup",
+    "section": "12.4 Optional LaTeX / PDF Toolchain",
+    "text": "12.4 Optional LaTeX / PDF Toolchain",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Software Setup</span>"
+    ]
+  }
+]

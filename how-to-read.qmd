@@ -1,0 +1,16 @@
+# How to Read These Notes
+
+The notes are organized by major study tracks rather than by final textbook structure.
+
+Each chapter may include:
+
+- motivation
+- definitions
+- mathematical derivations
+- algorithms
+- worked examples
+- implementation notes
+- exercises
+- references
+
+The progress dashboard is included for tracking study and notes-writing progress. Technical chapters should be read as evolving notes.

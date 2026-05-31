@@ -1,0 +1,5 @@
+# Preface
+
+These notes are meant to support long-term graduate-level study and research development in grid intelligence, optimization, machine learning, control, and scientific computing.
+
+The current version should be viewed as a living technical notebook rather than a finished book. Over time, selected material may be reorganized into polished tutorials, dissertation-support material, internal technical reports, or book-length manuscripts.

@@ -1,0 +1,26 @@
+# Progress Dashboard
+
+This page tracks study progress and notes-writing progress across the main study tracks.
+
+::: {.callout-tip}
+## How to interpret this table
+
+- **Study percent** tracks conceptual/course progress.
+- **Notes percent** tracks how much has been written into these technical notes.
+- The dashboard is mainly for internal tracking.
+:::
+
+```{python}
+#| echo: false
+#| warning: false
+#| message: false
+
+import pandas as pd
+
+df = pd.read_csv("data/progress.csv")
+
+df.style.format({
+    "study_percent": "{:.0f}%",
+    "notes_percent": "{:.0f}%"
+})
+```

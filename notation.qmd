@@ -1,0 +1,15 @@
+# Notation
+
+This page collects common notation used throughout the notes.
+
+| Symbol | Meaning |
+|---|---|
+| $x$ | State vector |
+| $u$ | Control input |
+| $y$ | Output vector |
+| $A, B, C, D$ | State-space matrices |
+| $P$ | Real power |
+| $Q$ | Reactive power |
+| $S$ | Complex power |
+| $V$ | Voltage phasor |
+| $I$ | Current phasor |

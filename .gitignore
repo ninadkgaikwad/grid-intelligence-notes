@@ -1,0 +1,23 @@
+# Quarto / build artifacts
+/.quarto/
+/_site/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Optional: uncomment if private notes should never be committed
+# private/
+
+**/*.quarto_ipynb

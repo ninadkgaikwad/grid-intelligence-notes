@@ -1,0 +1,19 @@
+# Chapter 1 — Mathematical Foundations for ML/RL/AI
+
+## Motivation
+
+## Linear Algebra for Learning
+
+## Matrix Calculus
+
+## Probability and Statistics
+
+## Optimization Foundations
+
+## Information-Theoretic Quantities
+
+## Worked Examples
+
+## Exercises
+
+## References

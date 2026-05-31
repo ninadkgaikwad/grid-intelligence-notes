@@ -1,0 +1,11 @@
+# Software Setup
+
+This appendix records the software setup used for building and maintaining these notes.
+
+## Quarto
+
+## Python
+
+## Git and GitHub
+
+## Optional LaTeX / PDF Toolchain

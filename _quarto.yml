@@ -1,0 +1,93 @@
+project:
+  type: book
+  output-dir: docs
+
+execute:
+  echo: false
+  warning: false
+  message: false
+  
+book:
+  title: "Living Technical Notes on Grid Intelligence"
+  author: "Ninad Gaikwad"
+  site-url: ""
+  repo-url: ""
+  sidebar:
+    style: docked
+    background: light
+    search: true
+  page-navigation: true
+  chapters:
+    - index.qmd
+    - preface.qmd
+    - how-to-read.qmd
+    - progress.qmd
+    - notation.qmd
+
+    - part: "Part I — Mathematical Foundations"
+      chapters:
+        - part-i-math/01-proof-writing-real-analysis.qmd
+
+    - part: "Part II — Control Systems"
+      chapters:
+        - part-ii-control/01-control-modeling.qmd
+
+    - part: "Part III — Machine Learning, Reinforcement Learning, and AI"
+      chapters:
+        - part-iii-ml-ai/01-ml-foundations.qmd
+
+    - part: "Part IV — Power Systems, Power Flow, and OPF"
+      chapters:
+        - part-iv-power-opf/01-phasors-per-unit-complex-power.qmd
+
+    - part: "Part V — PyTorch for Research Implementation"
+      chapters:
+        - part-v-pytorch/01-computational-graphs-autodiff.qmd
+
+    - part: "Part VI — Parallel Computing and Scientific Software Performance"
+      chapters:
+        - part-vi-parallel/01-performance-foundations.qmd
+
+    - appendices/software-setup.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles.scss]
+      dark: [darkly, styles-dark.scss]
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: false
+    code-copy: true
+    code-overflow: wrap
+    smooth-scroll: true
+    link-external-newwindow: true
+    page-layout: article
+
+  pdf:
+    documentclass: scrbook
+    classoption:
+      - oneside
+      - openany
+    toc: true
+    number-sections: true
+    colorlinks: true
+    geometry:
+      - top=0.75in
+      - bottom=0.75in
+      - left=0.75in
+      - right=0.75in
+    fontsize: 10.5pt
+    linestretch: 1.05
+    include-in-header:
+      text: |
+        \usepackage{amsmath, amssymb, amsthm}
+        \usepackage{mathtools}
+        \usepackage{bm}
+        \usepackage{booktabs}
+        \usepackage{microtype}
+        \usepackage{xcolor}

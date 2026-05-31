@@ -1,0 +1,19 @@
+# Chapter 1 — Computational Graphs and Automatic Differentiation
+
+## Motivation
+
+## Scalar and Vector Functions
+
+## Computational Graphs
+
+## Multivariable Chain Rule
+
+## Reverse-Mode Automatic Differentiation
+
+## Manual Gradient Descent
+
+## Mapping to PyTorch Autograd
+
+## Exercises
+
+## References

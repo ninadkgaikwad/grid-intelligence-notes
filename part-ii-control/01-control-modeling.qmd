@@ -1,0 +1,19 @@
+# Chapter 1 — Dynamical Systems and Control Modeling
+
+## Motivation
+
+## Continuous-Time and Discrete-Time Dynamics
+
+## States, Inputs, Outputs, and Disturbances
+
+## Equilibrium Points
+
+## Linearization Around Equilibria
+
+## Control Objectives
+
+## Worked Examples
+
+## Exercises
+
+## References
